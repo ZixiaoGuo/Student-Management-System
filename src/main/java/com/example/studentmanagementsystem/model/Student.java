@@ -3,11 +3,12 @@ package com.example.studentmanagementsystem.model;
 import javax.persistence.*;
 import java.util.List;
 
+@Entity
 public class Student {
 
     @Id
     @GeneratedValue
-    private int id;
+    private long id;
     private String firstName;
     private String lastName;
 
@@ -26,7 +27,7 @@ public class Student {
     public Student() {
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

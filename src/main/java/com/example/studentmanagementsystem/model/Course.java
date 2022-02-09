@@ -9,7 +9,7 @@ import java.util.List;
 public class Course {
 
     @Id
-    private String id;
+    private long id;
     private String courseName;
     private String courseInfo;
 
@@ -19,11 +19,11 @@ public class Course {
     public Course() {
     }
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
